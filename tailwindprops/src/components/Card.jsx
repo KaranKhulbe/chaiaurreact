@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({username}) {
+function Card({username, btntext="visit l"}) {
     console.log("username: ",username);
 
   return (
@@ -18,7 +18,7 @@ function Card({username}) {
         debitis?
       </p>
       <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-        View Profile →
+        {btntext} →
       </button>
     </div>
   </div>

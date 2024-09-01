@@ -16,8 +16,8 @@ function App() {
     <>
       <div>
       <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'> Tailwind Test</h1>
-     <Card username="chaiaurcode" />
-     <Card/>
+     <Card username="chaiaurcode" btntext ="click me"/>
+     <Card username="karan" />
 
       </div>
     </>
