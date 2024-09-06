@@ -4,10 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  <>
-  <h1 className='text-3xl'> Today is a Productive Day</h1>
+return(
+  <> 
+
+  <h1 className='text-3xl'>  Today is a Productive Day</h1>
     </>
-  
+  )
 }
 
 export default App
