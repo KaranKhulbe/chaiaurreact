@@ -1,5 +1,5 @@
 import conf from "../conf/conf"
-import {Client ,Account, ID, Databases, Query , Storage} from "appwrite"
+import {Client , Account, ID, Databases, Query , Storage} from "appwrite"
 export class Service{
     client = new Client();
     account;
@@ -17,7 +17,7 @@ export class Service{
     async createPost({title,slug,content,featuredImage,status, userId}){
         try{
 
-            return await this.databasescreatedocument(conf.appwriteDatabaseId,
+            return await this.databases.createdocument(conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,
                 {
@@ -36,7 +36,7 @@ export class Service{
 
     async updatepost(slug,{title, content, featuredImage,status,}){
         try{
-            return await this.databases>updateDocument(
+            return await this.databases.updateDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,
