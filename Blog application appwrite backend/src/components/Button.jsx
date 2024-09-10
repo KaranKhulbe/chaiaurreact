@@ -13,4 +13,4 @@ function Button({
   )
 }
 
-export default Button
+export default React.forwardRef(Select)
